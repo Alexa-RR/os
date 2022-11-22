@@ -6,7 +6,7 @@ jobs:
   os:
     uses: pikvm/os/.github/workflows/os.yml@master
     with:
-      BOARD: rpi4
+      BOARD: rpi3
       PLATFORM: v2-hdmiusb
     secrets:
       DEPLOY_KEY: "${{secrets.DEPLOY_KEY}}"
