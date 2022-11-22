@@ -63,5 +63,8 @@ jobs:
       - name: Making image
         run: make image ZIP=1
 
-      - name: Uploading image
-        run: make upload
+      - name: Uplaod artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: img
+          path: images/
